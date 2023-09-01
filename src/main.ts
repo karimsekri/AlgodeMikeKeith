@@ -11,9 +11,9 @@ function trouverJour(day:number, month:number, year:number) {
   else
   {
     z = year - 1; 
-    D =  (((23*month)/9) + day + 4 + year + Math.trunc(z/4) - Math.trunc(z/100) + Math.trunc(z/400)) % 7 ;
+    D =  (Math.trunc((23*month)/9) + day + 4 + year + Math.trunc(z/4) - Math.trunc(z/100) + Math.trunc(z/400)) % 7 ;
   }
-switch (Math.trunc(D)) {
+switch (D) {
   case 0:
     console.log("Dimanche")
     break;
