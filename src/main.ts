@@ -45,3 +45,30 @@ switch (Math.trunc(D)) {
  
 
 }
+
+
+/*CALCUL DU MAXIMUM DE 3 VALEURS
+Ecrire un algorithme qui :
+
+    lit trois entiers,
+    détermine le plus grand des trois (plusieurs solutions possibles),
+    affiche le résultat. */
+
+plusGrand(11,15,8);
+
+function plusGrand(int1:number, int2:number, int3:number) {
+  let lePlusGrand = 0;
+  if (int1 > lePlusGrand) {
+    lePlusGrand = int1;
+  }
+  if (int2 > lePlusGrand) {
+    lePlusGrand  = int2;
+  }
+
+  if (int3 > lePlusGrand) {
+    lePlusGrand = int3;
+  }
+    
+  console.log(lePlusGrand);
+
+}
